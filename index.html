@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Day Planner</title>
 
+    <script src="https://kit.fontawesome.com/1866c76c2a.js" crossorigin="anonymous"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
@@ -14,14 +15,103 @@
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+
   </head>
   <body>
-      
+
+        
+        <main class="">
+  
+            <!-- Begin hero banner content -->
+            <!-- https://getbootstrap.com/docs/4.5/components/jumbotron/ -->
+            <header class="jumbotron text-center ">
+              <h1 class="">Work Day Scheduler</h1>
+              <p>A simple calendar app for scheduling your work day</p>
+              <p id="current"></p>
+            </header>
+
+            <section class="calendar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1 firstborder borderspace time">9AM</div>
+                        <div class="col-10 timepast">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">10AM</div>
+                        <div class="col-10 timepast">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">11AM</div>
+                        <div class="col-10 timeforward">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">12PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">1PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">2PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">3PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">4PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">5PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 borderspace time">6PM</div>
+                        <div class="col-10">Put task here</div>
+                        <div class="col-1 saveright fa-lg fa-solid fa-floppy-disk"></div>
+                    </div>
+
+                </div>
+
+
+            
+
+
+
+            </section>    
+
+
+
+
+
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"
+></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+></script>
+  
   <script src="./assets/js/script.js"></script>
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

@@ -1,0 +1,47 @@
+.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+    border-bottom: solid black 5px;
+}
+
+.firstborder {
+  border-top: dashed 0.5px;
+  border-right: solid black 0.5px;
+}
+
+.borderspace {
+  border-bottom: dashed 0.5px;
+  border-right: solid black 0.5px;
+  text-align: right;
+}
+
+.row {
+    height: 75px;
+}
+
+.timepast {
+    background-color: rgb(187, 186, 186);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.timeforward {
+    background-color: rgb(115, 219, 115);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.saveright {
+    background-color: rgb(54, 164, 192);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: solid black 0.5px;
+
+}
+
