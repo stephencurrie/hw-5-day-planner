@@ -1,3 +1,7 @@
+textarea {
+	resize: none;
+}
+
 .jumbotron {
     padding: 0;
     margin-bottom: 0;
@@ -20,12 +24,18 @@
 }
 
 .timepast {
-    background-color: rgb(187, 186, 186);
+    background-color: rgb(170, 167, 167);
     margin-top: 1px;
     margin-bottom: 1px;
 }
 
-.timeforward {
+.timepresent {
+    background-color: rgb(223, 109, 94);
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.timefuture {
     background-color: rgb(115, 219, 115);
     margin-top: 1px;
     margin-bottom: 1px;
