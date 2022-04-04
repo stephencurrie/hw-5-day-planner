@@ -3,7 +3,7 @@
 var time = moment().format("dddd, MMM Do YYYY hh:mm A");
 $("#current").text(time);
 
-// Check what's in local storage and display on page (Surely there is a way to build a for loop and a function to build these dynamically)
+// Check what's in local storage and display on page 
 
 for (var i = 1; i < 17; i++) {
   if ("hour" + i in localStorage) {
@@ -15,9 +15,9 @@ for (var i = 1; i < 17; i++) {
   }
 }
 
+ //This function called when the button is clicked
 $(document).ready(function () {
-  //This function called when the button is clicked
-
+ 
   $(".saveBtn").click(function () {
     //This grabs the text in the editable div
     var txt = $(this).prev().text();
@@ -35,23 +35,20 @@ $(document).ready(function () {
 var checkTime = function () {
   // Shows time as an intiger
   var currentTime = parseInt(moment().format("H"));
-  console.log(currentTime);
+
 
   $(".text").each(function () {
     var iD = parseInt($(this).attr("id"));
     if (iD === currentTime) {
-      // alert("current")
       $(this)
         .removeClass("timepast timepresent timefuture")
         .addClass("timepresent");
     } else {
       if (iD < currentTime) {
-        // alert("past")
         $(this)
           .removeClass("timepast timepresent timefuture")
           .addClass("timepast");
       } else {
-        // alert("future")
         $(this)
           .removeClass("timepast timepresent timefuture")
           .addClass("timefuture");
