@@ -5,50 +5,15 @@ $("#current").text(time);
 
 // Check what's in local storage and display on page (Surely there is a way to build a for loop and a function to build these dynamically)
 
-for (var i=1; i<17; i++) {
-
-if ("hour" + i in localStorage) {
-  text = localStorage.getItem("hour" + i);
-  $("#hour" + i).children().eq(1).text(text);
+for (var i = 1; i < 17; i++) {
+  if ("hour" + i in localStorage) {
+    text = localStorage.getItem("hour" + i);
+    $("#hour" + i)
+      .children()
+      .eq(1)
+      .text(text);
+  }
 }
-
- }
-// if ("hour10" in localStorage) {
-//   text = localStorage.getItem("hour10");
-//   $("#hour10").children().eq(1).text(text);
-// }
-// if ("hour11" in localStorage) {
-//   text = localStorage.getItem("hour11");
-//   $("#hour11").children().eq(1).text(text);
-// }
-// if ("hour12" in localStorage) {
-//   text = localStorage.getItem("hour12");
-//   $("#hour12").children().eq(1).text(text);
-// }
-// if ("hour1" in localStorage) {
-//   text = localStorage.getItem("hour1");
-//   $("#hour1").children().eq(1).text(text);
-// }
-// if ("hour2" in localStorage) {
-//   text = localStorage.getItem("hour2");
-//   $("#hour2").children().eq(1).text(text);
-// }
-// if ("hour3" in localStorage) {
-//   text = localStorage.getItem("hour3");
-//   $("#hour3").children().eq(1).text(text);
-// }
-// if ("hour4" in localStorage) {
-//   text = localStorage.getItem("hour4");
-//   $("#hour4").children().eq(1).text(text);
-// }
-// if ("hour5" in localStorage) {
-//   text = localStorage.getItem("hour5");
-//   $("#hour5").children().eq(1).text(text);
-// }
-// if ("hour6" in localStorage) {
-//   text = localStorage.getItem("hour6");
-//   $("#hour6").children().eq(1).text(text);
-// }
 
 $(document).ready(function () {
   //This function called when the button is clicked
@@ -72,20 +37,8 @@ var checkTime = function () {
   var currentTime = parseInt(moment().format("H"));
   console.log(currentTime);
 
-  //   function setBackground(){
-  // $(document).ready(function(){
-  // $(".text").each(function(){
-  //     var iD = $(".text").attr("id");
-  //     console.log(iD);
-  //     if (iD === currentTime) {
-  //  $(".text").removeClass("timepast timepresent timefuture");
-  //  $(".text").addClass("timepresent");}
-  //     });
-  // });
-  // }
-
   $(".text").each(function () {
-    var iD = parseInt( $(this).attr("id"));
+    var iD = parseInt($(this).attr("id"));
     if (iD === currentTime) {
       // alert("current")
       $(this)
@@ -105,13 +58,6 @@ var checkTime = function () {
       }
     }
   });
-
-  // for (i = 0; i < 11; i++) {
-  //   var iD = $(".text")[i].id;
-
-  //   console.log(iD);
-  // }
-  // };
 
   // checkTime every 5 minutes
 };

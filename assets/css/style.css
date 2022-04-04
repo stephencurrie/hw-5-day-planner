@@ -8,6 +8,8 @@ textarea {
     border-bottom: solid black 5px;
 }
 
+/* These clases are the left column and row height */
+
 .firstborder {
   border-top: dashed 0.5px;
   border-right: solid black 0.5px;
@@ -22,6 +24,8 @@ textarea {
 .row {
     height: 75px;
 }
+
+/* These are the classes that dynamically get inserted to set the background color */
 
 .timepast {
     background-color: rgb(170, 167, 167);
@@ -40,6 +44,8 @@ textarea {
     margin-top: 1px;
     margin-bottom: 1px;
 }
+
+/* This is the right column that has the font awesome icon */
 
 .saveright {
     background-color: rgb(54, 164, 192);
